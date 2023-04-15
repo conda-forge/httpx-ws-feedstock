@@ -1,11 +1,11 @@
-About httpx-ws
-==============
+About httpx-ws-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-ws-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/frankie567/httpx-ws
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpx-ws-feedstock/blob/main/LICENSE.txt)
 
 Summary: WebSocket support for HTTPX
 
