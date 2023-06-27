@@ -16,17 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - hatch-regex-commit
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - anyio
     - httpx >=0.23.1
     - httpcore >=0.16.1
     - wsproto
-    - typing-extensions
 
 test:
   imports:
