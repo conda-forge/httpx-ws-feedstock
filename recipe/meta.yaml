@@ -1,5 +1,5 @@
 {% set name = "httpx-ws" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/httpx_ws-{{ version }}.tar.gz
-  sha256: 662bdc72093f4181bd9e93df8b02232d84747961358866d9d8a16e0d13bc2148
+  sha256: 5f3e291e8fb99c89f994329d883e5679d02a0b5b12a1e414f7f8630c276b6744
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - anyio
     - httpx >=0.23.1
-    - httpcore >=0.16.1
+    - httpcore >=0.17.3,<0.18
     - wsproto
 
 test:
