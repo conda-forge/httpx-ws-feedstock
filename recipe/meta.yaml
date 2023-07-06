@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - anyio
     - httpx >=0.23.1
-    - httpcore >=0.16.1
+    - httpcore >=0.17.3,<0.18
     - wsproto
 
 test:
