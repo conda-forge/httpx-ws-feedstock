@@ -10,7 +10,7 @@ source:
   sha256: bb0997ec4a3ff5f9d88631c0dc196ebbd7cee669b441b9f93221eefc4ccc7dd6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - anyio
     - httpx >=0.23.1
-    - httpcore >=0.17.3,<0.18
+    - httpcore >=0.17.3
     - wsproto
 
 test:
