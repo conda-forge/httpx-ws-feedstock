@@ -10,18 +10,18 @@ source:
   sha256: 352843c3a37bd7d807bb3fd63130d30f8f7d533bfc921a409bd25edd00d26029
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - hatch-regex-commit
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - anyio >=4
     - httpx >=0.23.1
     - httpcore >=1.0.4
@@ -32,6 +32,7 @@ test:
     - httpx_ws
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
