@@ -1,5 +1,5 @@
 {% set name = "httpx-ws" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/httpx_ws-{{ version }}.tar.gz
-  sha256: 352843c3a37bd7d807bb3fd63130d30f8f7d533bfc921a409bd25edd00d26029
+  sha256: 72f355d4b9b16d8fa59e5e68efdfcb1f3c7dca944901b373791245c8f67f9f95
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
